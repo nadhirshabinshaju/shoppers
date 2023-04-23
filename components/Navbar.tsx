@@ -26,7 +26,7 @@ import DarkToggleSwitch from './common/DarkToggleSwitch';
 export const Navbar = ({ toggleDark }) => {
   const theme = useTheme();
   const isDark = theme.palette.mode === 'dark';
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuButton = <IconButton
     size='large'
@@ -52,12 +52,11 @@ export const Navbar = ({ toggleDark }) => {
           backgroundPosition: 'top'
         }}></Box>
         <Box sx={{ pt: 3, pb: 1 }}>
-          <Typography variant='h2' textAlign={'center'} sx={{ fontSize: 40, margin: 'auto' }}>nadhirsha.com</Typography>
+          <Typography variant='h2' textAlign={'center'} sx={{ fontSize: 40, margin: 'auto' }}>Shoppers</Typography>
         </Box>
         <Divider sx={{ pb: 2 }} />
       </Box>
       <Stack direction={'column'} spacing={0} my={2} justifyContent={'center'}>
-        <MenuItem>Jobs</MenuItem>
         <MenuItem>Companies</MenuItem>
         <MenuItem>Blog</MenuItem>
         <MenuItem>Learn</MenuItem>
@@ -104,11 +103,11 @@ export const Navbar = ({ toggleDark }) => {
               color='inherit'
               sx={{
                 flexGrow: 1,
-                fontWeight: 300,
+                fontWeight: 600,
                 textDecoration: 'none',
               }}
             >
-              nadhirsha.com
+              Shoppers
             </Typography>
             <Stack direction={'row'} display={{ xs: 'none', md: 'inline-flex' }}>
               <MenuItem>Jobs</MenuItem>

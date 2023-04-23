@@ -15,7 +15,7 @@ import LinkedIn from '@mui/icons-material/LinkedIn';
 import FacebookOutlined from '@mui/icons-material/FacebookOutlined';
 import Instagram from '@mui/icons-material/Instagram';
 import TypewriterComponent from 'typewriter-effect';
-import BioCard from '@/components/profile/BioCard';
+import SearchShops from '@/components/Home/SearchShops';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -41,13 +41,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nadhirsha Bin Shaju | Fullstack software developer</title>
+        <title>Shoppers | One stop for all your shops</title>
         <meta name='description' content='Fullstack software developer' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Container>
-      <BioCard />
+        <SearchShops />
       </Container>
     </>
   );

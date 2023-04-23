@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import '@/styles/globals.css';
 import { PaletteMode, ThemeProvider, createTheme } from '@mui/material';
-import { amber, deepOrange, grey, common,  } from '@mui/material/colors';
+import { amber, deepOrange, grey, common, } from '@mui/material/colors';
 import { createContext, useContext, useMemo, useState } from 'react';
 
 const lightTheme = createTheme({
@@ -9,7 +9,7 @@ const lightTheme = createTheme({
     mode: 'light'
   },
   typography: {
-    fontFamily: 'Roboto'
+    fontFamily: 'Space Mono, monospace'
   },
   components: {
     MuiContainer: {
@@ -43,27 +43,27 @@ const getDesignTokens = (mode: PaletteMode) => ({
     mode,
     ...(mode === 'light'
       ? {
-          // palette values for light mode
-          primary: grey,
-          divider: amber[200],
-          text: {
-            primary: grey[900],
-            secondary: grey[800],
-          },
-        }
+        // palette values for light mode
+        primary: grey,
+        divider: amber[200],
+        text: {
+          primary: grey[900],
+          secondary: grey[800],
+        },
+      }
       : {
-          // palette values for dark mode
-          primary: amber,
-          divider: deepOrange[700],
-          background: {
-            default: deepOrange[900],
-            paper: deepOrange[900],
-          },
-          text: {
-            primary: '#fff',
-            secondary: grey[500],
-          },
-        }),
+        // palette values for dark mode
+        primary: amber,
+        divider: deepOrange[700],
+        background: {
+          default: deepOrange[900],
+          paper: deepOrange[900],
+        },
+        text: {
+          primary: '#fff',
+          secondary: grey[500],
+        },
+      }),
   },
 });
 
